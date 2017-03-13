@@ -37,8 +37,8 @@ def main():
 
 
     choice = ' '+ands1+' '+ word1['Word']+' '+ors1+' '+word2['Word']+'-'+disp1+' '+ word3['Word']
-    print choice
+    #print choice
     return render_template('main.html', choice=choice)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
