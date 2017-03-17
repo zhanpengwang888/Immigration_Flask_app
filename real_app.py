@@ -36,9 +36,10 @@ def main():
     word3 = random.choice(dict_list)
 
 
-    choice = ' '+ands1+' '+ word1['Word']+' '+ors1+' '+word2['Word']+'-'+disp1+' '+ word3['Word']
+    choice = ' '+ands1+' '+ word1['Word']+' '+ors1+' '+word2['Word']+' - '+disp1+' '+ word3['Word']
     #print choice
     return render_template('main.html', choice=choice)
 
 if __name__ == '__main__':
     app.run()
+    #app.run(debug=True) # if you want to debug the flask app.

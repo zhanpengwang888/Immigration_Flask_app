@@ -1,12 +1,10 @@
 {% extends "template.html" %}
 {% block content %}
-    <h2>Welcome to the Flask App for Immigration!</h2>
+    <p>Click to generate a title:</p>
     <form action="{{url_for('main')}}" class="main">
         <input class="button" type="submit" name="click">
     </form>
     <br>
     <br>
-
-    <h3>Result:</h3>
-        <strong>Name:</strong>{{ choice }} <br>
+        <h1>{{ choice }}</h1> <br>
 {% endblock %}
